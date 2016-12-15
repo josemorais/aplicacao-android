@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffff2b13">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cachorro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Digite a idade do seu cachorro para descobrir a idade dele em anos humanos."
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffff7d1f"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edtIdadeId"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:background="#ffffffff"
+        android:minHeight="30dp"
+        android:layout_alignLeft="@+id/btnIdadeId"
+        android:layout_alignStart="@+id/btnIdadeId"
+        android:layout_alignRight="@+id/btnIdadeId"
+        android:layout_alignEnd="@+id/btnIdadeId"
+        android:maxLength="3"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descobrir_idade"
+        android:id="@+id/btnIdadeId"
+        android:layout_below="@+id/edtIdadeId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:enabled="false"/>
+
+</RelativeLayout>
