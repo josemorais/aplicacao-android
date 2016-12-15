@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="atmempresaconsultoria.cursoandroid.com.atmempresaconsultoria.EmpresaActivity"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:background="@drawable/detalhe_empresa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/texto_sobre_empresa"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView"
+        android:background="#fff6edff"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit, turpis et ullamcorper dictum, metus tortor consequat neque, ut varius erat erat ac arcu. Phasellus eros urna, faucibus vitae lobortis eget, pretium eget diam. Donec rhoncus neque nec tempus tempor. Mauris pulvinar hendrerit arcu, eget consectetur ipsum maximus vel. Nunc commodo tempor dolor faucibus molestie. Sed et leo eget nisi consectetur ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus egestas, nisl sed gravida aliquet, mauris metus pretium dui, non ullamcorper massa risus sit amet sem. Cras eu commodo elit. Fusce tincidunt purus enim, nec congue elit sodales in. Nullam at dignissim leo, id porttitor diam. Morbi sit amet ex scelerisque, condimentum felis non, eleifend nisl. "
+            android:id="@+id/textView2"
+            android:padding="@dimen/padding_padrao" />
+    </ScrollView>
+</RelativeLayout>
