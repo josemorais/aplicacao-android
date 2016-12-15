@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Frase do dia</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="texto_botao_frase">Nova Frase</string>
+    <string name="fonte_texto_frase">35sp</string>
+
+    <array name="frases">
+        <item name="frase1">\"A persistência é o caminho do êxito.\" \nCharles Chaplin</item>
+        <item name="frase2">\"O que não provoca minha morte faz com que eu fique mais forte.\" \nFriedrich Nietzsche</item>
+        <item name="frase3">\"Pedras no caminho? Eu guardo todas. Um dia vou construir um castelo.\" \nNemo Nox</item>
+        <item name="frase4">\"O que me preocupa não é o grito dos maus. É o silêncio dos bons.\" \nMartin Luther King</item>
+    </array>
+</resources>
