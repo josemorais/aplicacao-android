@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <include android:id="@+id/tb_conversas_id" layout="@layout/toolbar"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/lv_conversas_id"
+        android:layout_below="@+id/tb_conversas_id" />
+
+    <LinearLayout android:id="@+id/ll_conversas_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edt_mensagem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mensagem"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_enviar_mensagem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_send"
+            android:theme="@style/botaoPadrao"/>
+
+    </LinearLayout>
+</RelativeLayout>
